@@ -11,11 +11,38 @@
 
 <body style="background-color: black;">
 
-    <div id="body" class="w-screen h-screen bg-black flex justify-between  items-center ">
-        <div class="text-white w-96  my-10">
+    <div id="body" class="w-screen h-screen bg-black flex justify-start  items-center flex-col">
+        
+        <div  class="text-white h-fit w-full flex justify-center items-center flex-col gap-10 px-5 py-10">
+            <h1 class="font-medium text-2xl text-center text-blue-500">Rat in Maze Problem Visualisation</h1>
+            <div id="parent" class="bg-slate-100 w-full h-fit flex flex-col justify-center gap-4 p-5 rounded-md"><!--col=5-->
+               
+            </div>
+        </div>
+
+        <div id="buttons" class="w-auto h-auto flex flex-col items-center gap-5 ">
+            <div class="flex gap-5">
+                <button id="1" class="w-16 h-16 font-bold border-x-4 border-solid border-x-white  text-3xl text-blue-900 bg-green-600 rounded-full">1</button>
+                <button id="0" class="w-16 h-16 font-bold border-x-4 border-solid border-x-white text-3xl text-blue-900 bg-red-600 rounded-full">0</button>
+                <button id="start" class="w-20 h-16 font-bold border-x-4 border-solid border-x-white text-xl text-blue-900 bg-yellow-300 rounded-full">Start</button>
+
+            </div>
+
+           
+            <div class="flex gap-5">
+                <button id="source" class="w-24 h-16 font-bold border-x-4 border-solid border-x-white  text-xl text-blue-900 bg-gray-400 rounded-full">Source</button>
+                <button id="des" class="w-32 h-16 font-bold border-x-4 border-solid border-x-white text-xl text-blue-900 bg-gray-500 rounded-full">Destination</button>
+    
+            </div>
+
+
+            
+        </div>
+
+        <div class="text-white w-96 h-fit px-8 my-10 ">
             <h1 class="text-4xl">Problem Info-:</h1>
             <br>
-            <pre class="text-sm">-> There is a Rat in a Maze
+            <p class="text-lg">-> There is a Rat in a Maze
 -> Maze Contain boxes having value 0 and 1
 ->The rat can only move horizontally
 or 
@@ -38,24 +65,9 @@ Note-: if No source and destination is declared by the user(you)
                 upper left corner
         By default value of destination will start from -:
                 lower right corner
-            </pre>
+            </p>
         </div>
-        <div  class="text-white h-fit w-fit flex justify-center items-center flex-col gap-10">
-            <h1 class="font-medium text-3xl from-neutral-500 text-blue-500">Rat in Maze Problem Visualisation</h1>
-            <div id="parent" class="bg-slate-100 w-auto h-auto flex flex-col justify-center gap-4 py-8 px-4 "><!--col=5-->
-               
-            </div>
-        </div>
-
-        <div id="buttons" class="w-auto h-auto flex flex-col gap-5  mx-10">
-            
-            <button id="1" class="w-20 h-20 font-bold border-x-4 border-solid border-x-white  text-3xl text-blue-900 bg-green-600 rounded-full">1</button>
-            <button id="0" class="w-20 h-20 font-bold border-x-4 border-solid border-x-white text-3xl text-blue-900 bg-red-600 rounded-full">0</button>
-            <button id="start" class="w-20 h-20 font-bold border-x-4 border-solid border-x-white text-xl text-blue-900 bg-yellow-300 rounded-full">Start</button>
-            <button id="source" class="w-20 h-20 font-bold border-x-4 border-solid border-x-white  text-xl text-blue-900 bg-gray-400 rounded-full">Source</button>
-            <button id="des" class="w-32 h-20 font-bold border-x-4 border-solid border-x-white text-xl text-blue-900 bg-gray-500 rounded-full">Destination</button>
-
-        </div>
+        
 
     </div>
 
