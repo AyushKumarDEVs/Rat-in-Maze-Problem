@@ -13,7 +13,7 @@ for (let i = 0; i < 5; i++) {
 function buildBoard(){
     for(let i=0;i<5;i++){
         let row=document.createElement("div");
-        row.className=" flex flex-row gap-5  justify-center w-auto items-center h-14";
+        row.className=" flex flex-row gap-5  justify-center w-full  items-center h-14";
         row.id=i;
         Parent.appendChild(row);
         let arr=[];
